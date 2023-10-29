@@ -42,21 +42,23 @@
 // const curriedSum = curry(sum);
 // console.log(curriedSum(2)(3)(5));
 
-// const person = {
-//     name: "Puja",
-//     sayMyName: function () {
-//         console.log(`My name is ${this.name}`);
-//     },
-// }
-// // person.sayMyName();
-//
-// function Person(name) {
-//     // this = {}
-//     this.name = name;
+// function sayMyName(name) {
+//     console.log(`My name is ${name}`);
 // }
 //
-// const p1 = new Person('anjay');
-// const p2 = new Person('mabar');
-// // console.log(p1.name, p2.name);
+// sayMyName(`Walter White`);
+// sayMyName(`Masbro`);
 
-console.log(Date());
+// Implicit Binding -
+// Explicit Binding
+// New Binding
+// Default Binding
+
+const person = {
+    name: 'Vishwas',
+    sayMyName: function () {
+        console.log(`My name is ${this.name}`);
+    },
+}
+
+person.sayMyName();
