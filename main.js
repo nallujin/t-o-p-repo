@@ -21,23 +21,42 @@
 // fn();
 // fn();
 
-function sum(a, b, c) {
-    return a + b + c;
-}
-
-console.log(sum(1, 2, 3));
-
+// function sum(a, b, c) {
+//     return a + b + c;
+// }
 //
+// console.log(sum(1, 2, 3));
+//
+//
+//
+// function curry(fn) {
+//     return function (a) {
+//         return function (b) {
+//             return function (c) {
+//                 return fn(a, b, c);
+//             };
+//         };
+//     };
+// }
+//
+// const curriedSum = curry(sum);
+// console.log(curriedSum(2)(3)(5));
 
-function curry(fn) {
-    return function (a) {
-        return function (b) {
-            return function (c) {
-                return fn(a, b, c);
-            };
-        };
-    };
-}
+// const person = {
+//     name: "Puja",
+//     sayMyName: function () {
+//         console.log(`My name is ${this.name}`);
+//     },
+// }
+// // person.sayMyName();
+//
+// function Person(name) {
+//     // this = {}
+//     this.name = name;
+// }
+//
+// const p1 = new Person('anjay');
+// const p2 = new Person('mabar');
+// // console.log(p1.name, p2.name);
 
-const curriedSum = curry(sum);
-console.log(curriedSum(2)(3)(5));
+console.log(Date());
