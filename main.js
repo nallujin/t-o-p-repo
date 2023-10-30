@@ -55,10 +55,20 @@
 // Default Binding
 
 const person = {
-    name: 'Vishwas',
-    sayMyName: function () {
-        console.log(`My name is ${this.name}`);
-    },
+    name: 'Vishwas'
+}
+function sayMyName () {
+    console.log(`My name is ${this.name}`);
 }
 
-person.sayMyName();
+// sayMyName.call(person);
+
+function Person(name) {
+    // this = {}
+    this.name = name;
+}
+
+const p1 = new Person("Vishwas");
+const p2 = new Person("Batman");
+
+sayMyName.call(p2);
