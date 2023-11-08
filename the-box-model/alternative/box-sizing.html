@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Sizing test</title>
+  <style>
+    html {
+      font-size: 16px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .test-box {
+      box-sizing: border-box;
+      font-size: 1rem;
+      padding: 10px;
+      width: 300px;
+      height: auto;
+      background-color: lightgrey;
+      text-align: center;
+      font-weight: bold;
+      border: 1px black solid;
+    }
+
+    .inside-text {
+      background-color: lightpink;
+      border: 1px black solid;
+      padding: 5px;
+      cursor: pointer;
+      transition: 150ms;
+    }
+
+    .inside-text:hover {
+      opacity: 0.7;
+    }
+
+    .inside-text#do {
+      background-color: lightyellow;
+    }
+
+    .inside-text#no {
+      background-color: lightgreen;
+    }
+
+    #do {
+      background-color: lightyellow;
+    }
+
+    #no {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+<div class="test-box">
+  <p class="inside-text">PROFILE</p>
+  <p class="inside-text" id="do">OPTIONS</p>
+  <p class="inside-text" id="no">MAIN MENU</p>
+</div>
+</body>
+</html>
