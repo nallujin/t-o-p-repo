@@ -1,4 +1,7 @@
-# My JavaScript learning repository
-### The Odin Project
+# Puja's learning repository
 
 ---
+### Resource:
+- [The Odin Project](https://www.theodinproject.com/)
+
+
