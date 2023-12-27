@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Please rate our service</title>
 </head>
 <body>
+    <p>Please rate the service</p>
+    <label for="very-poor">
+        <input type="radio" name="rate" value="Very poor" id="very-poor">Very poor
+    </label>
+    <label for="poor">
+        <input type="radio" name="rate" value="Poor" id="poor">Poor
+    </label>
+    <label for="ok">
+        <input type="radio" name="rate" value="OK" id="ok">OK
+    </label>
+    <label for="good">
+        <input type="radio" name="rate" value="Good" id="good">Good
+    </label>
+    <label for="very-good">
+        <input type="radio" name="rate" value="Very good" id="very-good">Very Good
+    </label>
 
+    <p>
+        <button id="sub-here" type="submit">Submit</button>
+    </p>
+    <p id="final"></p>
+    <script>
+        const btn = document.getElementById("sub-here");
+        const output = document.getElementById("final");
+        btn.addEventListener("click", () => {
+            let rates = document.getElementsByName("rate");
+            rates.forEach((rate) => {
+                if (rate.checked) {
+                    output.innerText = `You chose ${rate.value}`;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
