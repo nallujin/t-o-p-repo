@@ -8,7 +8,7 @@
   <title>Form</title>
 </head>
 <body>
-<form action="results.html" method="GET">
+<form action="results.html" method="GET" enctype="multipart/form-data">
   <div>
     <label for="name">Name</label>
     <input type="text" name="name" id="name" placeholder="username" required />
@@ -49,11 +49,26 @@
   </div>
   <div>
     <label for="eyeColor">Eye Color</label>
-    <select name="eyeColor" id="eyeColor">
+    <select name="eyeColor" id="eyeColor" multiple>
       <option value="Green">Green</option>
       <option value="Red">Red</option>
     </select>
   </div>
+  <div>
+    <label for="bio">Bio</label>
+    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+  </div>
+  <input type="hidden" name="hidden" value="hi" />
+  <div>
+    <label for="file">File</label>
+    <input type="file" name="file" id="file"/>
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+  </div>
+  <label for="url">URL</label>
+  <input type="url" name="url" id="url" />
   <div>
     <label for="password">Password</label>
       <input type="password" name="password" id="password" required />
